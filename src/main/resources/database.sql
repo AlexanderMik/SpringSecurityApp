@@ -10,7 +10,7 @@ CREATE TABLE users(
 
 CREATE TABLE roles(
   id INT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(10) NOT NULL
+  name VARCHAR(15) NOT NULL
 );
 
 -- Create table for mapping users and roles
@@ -31,5 +31,6 @@ INSERT INTO users VALUES (1, 'admin', 'password');
 
 INSERT INTO roles VALUES (1, 'ROLE_USER');
 INSERT INTO roles VALUES (2, 'ROLE_ADMIN');
+INSERT INTO roles VALUES (2, 'ROLE_ANONYMOUS');
 
 INSERT INTO users_roles VALUES (1, 2);
